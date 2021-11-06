@@ -2,9 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const filePath = `${__dirname}/secret-folder`;
 
-
-
-
 fs.readdir(filePath, {withFileTypes: true}, (err, files) => {
     if (err) throw err;
     files.forEach(el => {

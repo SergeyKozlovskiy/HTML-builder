@@ -4,8 +4,6 @@ const readline = require('readline');
 const { stdin: input, stdout: output } = require('process');
 const filePath = `${path.join(__dirname, "data.txt")}`;
 
-
-
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -23,11 +21,7 @@ const rl = readline.createInterface({
 
   rl.on('line', (line) => {
     if(line !== 'exit'){
-        fs.appendFile(
-            filePath,
-            `\n${line}`,
-            'utf8',
-            (err) => {
+        fs.appendFile(filePath, `\n${line}`, 'utf8', (err) => {
               if (err) throw err;
             }
           );
