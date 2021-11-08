@@ -29,8 +29,7 @@ fs.stat(distFilesPath, (err, stats) => {
             }
         })
     });
-
-    })
+})
 
 
 
