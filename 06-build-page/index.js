@@ -97,7 +97,6 @@ function copyAssets (dir){
     });
 
     const walk = function(dir, done) {
-        // let results = [];
         fs.readdir(dir, function(err, list) {
           if (err) return done(err);
           var pending = list.length;
